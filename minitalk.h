@@ -6,7 +6,7 @@
 /*   By: mohmazou <mohmazou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/02 19:37:35 by mohmazou          #+#    #+#             */
-/*   Updated: 2024/06/07 10:47:50 by mohmazou         ###   ########.fr       */
+/*   Updated: 2024/06/07 12:27:02 by mohmazou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,10 @@
 # include <signal.h>
 # include <stdlib.h>
 # include <stdio.h>
+
+# ifndef MAX_PID
+#  define MAX_PID 4194304
+# endif
 
 void	ft_error(char *str_pid, int int_pid);
 int		ft_isdigit(int c);

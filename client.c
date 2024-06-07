@@ -6,7 +6,7 @@
 /*   By: mohmazou <mohmazou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/02 21:23:34 by mohmazou          #+#    #+#             */
-/*   Updated: 2024/06/07 10:47:58 by mohmazou         ###   ########.fr       */
+/*   Updated: 2024/06/07 12:26:40 by mohmazou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	get_pid(char *pid_str)
 	int	res;
 
 	res = ft_atoi(pid_str);
-	if (res <= 0 || res > 4194304)
+	if (res <= 0 || res > MAX_PID)
 		ft_error(pid_str, 0);
 	return (res);
 }
